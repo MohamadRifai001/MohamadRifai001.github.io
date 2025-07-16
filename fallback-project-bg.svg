@@ -1,0 +1,18 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"></stop>
+      <stop offset="1" stop-color="#8B5CF6"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" rx="24" fill="url(#gradient)"></rect>
+
+  <g transform="translate(400, 300)" text-anchor="middle">
+    <circle r="48" fill="white" opacity="0.2"></circle>
+    <path d="M390 295a10 10 0 0 1 10 10v0a10 10 0 0 1-10 10h-380a10 10 0 0 1-10-10v0a10 10 0 0 1 10-10h380z" fill="white" opacity="0.05"></path>
+    <text y="12" font-size="28" fill="white" font-family="sans-serif" font-weight="600">
+      Project Preview
+    </text>
+  </g>
+</svg>
