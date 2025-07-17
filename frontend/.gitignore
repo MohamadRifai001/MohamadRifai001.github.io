@@ -25,4 +25,4 @@ dist-ssr
 .env
 .bolt
 
-/data/portfolio.ts
+/src/data/*
