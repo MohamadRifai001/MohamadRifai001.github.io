@@ -47,6 +47,7 @@ const Footer: React.FC = () => {
             >
               <Linkedin size={24} />
             </motion.a>
+            {/* readd later for twitter if needed*/}
             {/* <motion.a
               href="https://twitter.com/username"
               target="_blank"
