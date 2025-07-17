@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Heart, Github, Linkedin } from "lucide-react";
+import { Heart, Github, Linkedin, Twitter } from "lucide-react";
 import { personalInfo } from "../../data/portfolio";
 
 const Footer: React.FC = () => {
@@ -47,16 +47,17 @@ const Footer: React.FC = () => {
             >
               <Linkedin size={24} />
             </motion.a>
-            {/* readd later for twitter if needed*/}
-            {/* <motion.a
-              href="https://twitter.com/username"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.2, y: -2 }}
-              className="text-gray-400 hover:text-white transition-colors"
-            >
-              <Twitter size={24} />
-            </motion.a> */}
+            {personalInfo.twitter && (
+              <motion.a
+                href={personalInfo.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, y: -2 }}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <Twitter size={24} />
+              </motion.a>
+            )}
           </motion.div>
 
           <motion.div
