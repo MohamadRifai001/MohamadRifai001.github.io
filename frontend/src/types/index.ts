@@ -6,6 +6,9 @@ export interface Project {
   githubUrl: string;
   liveUrl?: string;
   imageUrl: string;
+  videoUrl?: string;
+  youtubeUrl?: string;
+  videoPoster?: string;
 }
 
 export interface Experience {
