@@ -61,6 +61,7 @@ const Projects: React.FC = () => {
           const hasSelfVideo = !!project.videoUrl;
           const hasYouTube = !!project.youtubeUrl;
           const canPlay = hasSelfVideo || hasYouTube;
+          const isInProgress = project.status === "in-progress";
 
           const onPlayClick = () => {
             if (hasSelfVideo)
@@ -86,6 +87,17 @@ const Projects: React.FC = () => {
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+
+                {/* Status badge */}
+                <span
+                  className={`absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold ${
+                    isInProgress
+                      ? "bg-amber-100 text-amber-800 dark:bg-amber-900/80 dark:text-amber-200"
+                      : "bg-green-100 text-green-800 dark:bg-green-900/80 dark:text-green-200"
+                  }`}
+                >
+                  {isInProgress ? "In Progress" : "Completed"}
+                </span>
 
                 {/* Play button overlay if video is available */}
                 {canPlay && (

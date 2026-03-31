@@ -9,6 +9,7 @@ export interface Project {
   videoUrl?: string;
   youtubeUrl?: string;
   videoPoster?: string;
+  status?: "completed" | "in-progress" | "planned";
 }
 
 export interface Experience {
